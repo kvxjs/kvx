@@ -6,3 +6,5 @@ examples
 coverage
 test
 src
+script
+.nyc_output/
