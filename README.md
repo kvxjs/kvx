@@ -1,7 +1,7 @@
 kvx
 ===========
 
-> A better xlsx lib for read / write / toTable / from Table
+> Distributed key/value store abstraction library for Node.js
 
 [![NPM version](https://img.shields.io/npm/v/kvx.svg)](https://www.npmjs.com/package/kvx)
 [![NPM downloads](https://img.shields.io/npm/dm/kvx.svg)](https://www.npmjs.com/package/kvx)
