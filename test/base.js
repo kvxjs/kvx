@@ -37,7 +37,7 @@ async function testPutGetDeleteExists(kv) {
     expect(exists).to.be.true;
 
     success = await kv.delete(key);
-    // expect(success).to.be.true;
+    expect(success).to.be.true;
     try {
       await kv.get(key);
     } catch(err) {
@@ -100,7 +100,7 @@ async function testDeleteTree(kv) {
   expect(p2.lastIndex).to.not.equal(0);
 
   const success = await kv.deleteTree(prefix);
-  // expect(success).to.be.true;
+  expect(success).to.be.true;
   try {
     await kv.get(k1);
   } catch(err) {
@@ -177,11 +177,11 @@ async function testAtomicDelete(kv) {
 
   let success;
   success = await kv.atomicDelete(key, pair);
-  // expect(success).to.be.false;
+  expect(success).to.be.false;
 
   pair.lastIndex = tmp;
   success = await kv.atomicDelete(key, pair);
-  // expect(success).to.be.true;
+  expect(success).to.be.true;
 }
 
 async function testWatch(kv) {
